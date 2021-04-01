@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta
+        charset="UTF-8">
+        <!-------Fontawesome------------------->
+        <script src="https://kit.fontawesome.com/193054c051.js" crossorigin="anonymous"></script>
+        <!-------Fontawesome------------------->
+        <link
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-------jQuery js library------------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-------Mobile kit------------------->
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-------Css file ------------------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+        <link rel="stylesheet" type="text/css" href="css/detail_view.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Dosis:wght@200;800&family=Libre+Franklin:wght@200&display=swap" rel="stylesheet">
+
+        <title>Landing Map</title>
+    </head>
+
+    <body>
+        <!--  -----------------------------------------MENU ABOLUTE --------------------------------------------- -->
+        <div class="hamberger-menu" id="open">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="container-menu">
+            <i id="close" class="fas fa-times"></i>
+            <p>close</p>
+
+            <div class="mobile-menu">
+                <a href="index.html">
+                    <div class="menu">HOME</div>
+                </a>
+                <a href="suchergebnis.html">
+                    <div class="menu">KONTAKT</div>
+                </a>
+                <a href="schule-list.html">
+                    <div class="menu">SCHULEN</div>
+                </a>
+                <a href="about.html">
+                    <div class="menu">ABOUT</div>
+                </a>
+            </div>
+        </div>
+        <!--  -----------------------------------------HEADER --------------------------------------------- -->
+        <div class="main">
+            <svg class="svg-first" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+                <path class="svg-path" fill="#80c5de" fill-opacity="0.4" d="M0,32L48,64C96,96,192,160,288,170.7C384,181,480,139,576,144C672,149,768,203,864,192C960,181,1056,107,1152,85.3C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+            <svg class="svg-second" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+                <path fill="#80c5de" fill-opacity=".5" d="M0,64L34.3,64C68.6,64,137,64,206,74.7C274.3,85,343,107,411,149.3C480,192,549,256,617,245.3C685.7,235,754,149,823,117.3C891.4,85,960,107,1029,128C1097.1,149,1166,171,1234,186.7C1302.9,203,1371,213,1406,218.7L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+            </svg>
+            <svg class="svg-third" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+                <path fill="#80c5de" fill-opacity="0.3" d="M0,288L34.3,266.7C68.6,245,137,203,206,192C274.3,181,343,203,411,213.3C480,224,549,224,617,197.3C685.7,171,754,117,823,112C891.4,107,960,149,1029,160C1097.1,171,1166,149,1234,117.3C1302.9,85,1371,43,1406,21.3L1440,0L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+            </svg>
+
+            <div class="left">
+                <h1>HTL PERG</h1>
+                <h3>TECHNISCHE SCHULE</h3>
+                <br>
+                <p>
+                   ipsa! Optio reprehenderit eveniet repudinemo vitae quas ipsa! Optio reprehenderit eveniet repudi repudiandae temporibus deserunt fugiat quam deleniti illo? Dolorem blanditiis unde quaerat ullam. Pariatur provident quaerat soluta reiciendis qui perspiciatis necessitatibus nemo quis quasi rerum, veritatis veniam.
+                </p>
+                <p id="contact"></p>
+                <div class="icons-contact">
+                    <a href="mailto:office@htl-perg.ac.at">
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/pages/category/Public-School/HTL-Perg-121450527977234">
+                        <div>
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/htlperg">
+                        <div>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="right">
+                <div class="info-content">
+                    <div
+                        class="apple"><!--------------------------------------- Map wird hier eingezeigt ------------------------------------->
+                    </div>
+                </div>
+                <div class="info-content2"></div>
+
+            </div>
+        </div>
+
+
+        <!--  -----------------------------------------FOOTER --------------------------------------------- -->
+
+        <footer>
+
+
+            <div class="main-footer">
+                <div class="first">
+                    <h3>Schule</h3>
+                    <ul>
+                        <a href="#">
+                            <li>HTL</li>
+                        </a>
+                        <a href="#">
+                            <li>HLW</li>
+                        </a>
+                        <a href="#">
+                            <li>POLY</li>
+                        </a>
+                        <a href="#">
+                            <li>BORG</li>
+                        </a>
+                        <a href="#">
+                            <li>HAK</li>
+                        </a>
+                        <a href="#">
+                            <li>VS</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="second">
+                    <h3>Ausbildung</h3>
+                    <ul>
+                        <a href="#">
+                            <li>IT</li>
+                        </a>
+                        <a href="#">
+                            <li>KOCH</li>
+                        </a>
+                        <a href="#">
+                            <li>MECHANIK</li>
+                        </a>
+                        <a href="#">
+                            <li>DESIGN</li>
+                        </a>
+                        <a href="#">
+                            <li>OFFICE</li>
+                        </a>
+                        <a href="#">
+                            <li>ARZT</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="third">
+                    <h3>Standort</h3>
+                    <ul>
+                        <a href="#">
+                            <li>PERG</li>
+                        </a>
+                        <a href="#">
+                            <li>LINZ</li>
+                        </a>
+                        <a href="#">
+                            <li>GEREIN</li>
+                        </a>
+                        <a href="#">
+                            <li>MATHOUSEN</li>
+                        </a>
+                        <a href="#">
+                            <li>INNS</li>
+                        </a>
+                        <a href="#">
+                            <li>LNGENSTEIN</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="fourth">
+                    <h3>WICHTIG</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                                                                                                                                                                    adipisicing elit. Maiores deleniti v
+                                                                                                                                                                    oluptatum architecto repellendus quod!
+                                                                                                                                                                    Quisquam consequuntur ut aspernatur m
+                                                                                                                                                                    inus error, eos sunt necessitatibus
+                                                                                                                                                                    ducimus sapiente, ipsum natus hic,
+                                                                                                                                                                    unde reprehenderit?
+                    </p>
+
+                </div>
+            </div>
+            <div class="main-footer-small">
+                <div>
+                    <a href="#">
+                        <p>IMPRESSUM</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <p>
+                            <i class="far fa-copyright"></i>
+                            In 2020 design Qasem Hashemi with
+                            <i class="far fa-heart"></i>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <div class="top">
+            <a href="#">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="/js/js.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/js/kontakt.js" charset="utf-8"></script>
+
+    </body>
+
+</html>
+<!--
+
+<div class="info">
+    <p>© Copyright  2020</p>
+    <p>HTL-Perg</p>
+    <p>Machlandstr. 48</p>
+    <p>4320 Perg  </p>
+    <p>07262 539 26</p>
+    <p>07262 539 26-6</p>
+
+</div>
+<div class="school-icons">
+    <a href="#">
+        <div><i class="fas fa-envelope"></i></div>
+    </a>
+    <a href="#">
+        <div><i class="fas fa-map-marked-alt"></i></div>
+    </a>
+    <a href="#">
+        <div><i class="fab fa-facebook-f"></i></div>
+    </a>
+    <a href="#">
+        <div><i class="fab fa-instagram"></i></div>
+    </a>
+
+</div> -->

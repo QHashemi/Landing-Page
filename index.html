@@ -1,12 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Landing Page</title>
+    <meta charset="UTF-8">
+    <!-------Fontawesome------------------->
+    <script src="https://kit.fontawesome.com/193054c051.js" crossorigin="anonymous"></script>
+    <!-------Fontawesome------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-------jQuery js library------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-------Mobile kit------------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------Css file ------------------->
+
+    <link rel="stylesheet" type="text/css" href="css/css_home.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Dosis:wght@200;800&family=Libre+Franklin:wght@200&display=swap"
+        rel="stylesheet">
+
+    <title>Landing Map</title>
 </head>
+
 <body>
-	<h1>Hello from Landing page</h1>
+    <!--  -----------------------------------------MENU ABOLUTE --------------------------------------------- -->
+
+    <div class="container-menu">
+        <i id="close" class="fas fa-times"></i>
+        <p>close</p>
+
+        <div class="mobile-menu">
+            <a href="index.html">
+                <div class="menu">HOME</div>
+            </a>
+            <a href="suchergebnis.html">
+                <div class="menu">KONTAKT</div>
+            </a>
+            <a href="schule-list.html">
+                <div class="menu">SCHULEN</div>
+            </a>
+            <a href="about.html">
+                <div class="menu">ABOUT</div>
+            </a>
+        </div>
+    </div>
+    <!--  -----------------------------------------HEADER --------------------------------------------- -->
+    <header class="showcase">
+        <div class="cloud">
+            <img src="/Image/cloud1.png" style="--i:1;">
+            <img src="/Image/cloud2.png" style="--i:2;">
+
+            <img src="/Image/cloud3.png" style="--i:3;">
+
+            <img src="/Image/cloud4.png" style="--i:4;">
+
+            <img src="/Image/cloud4.png" style="--i:5;">
+
+        </div>
+
+        <div class="main-icon">
+            <div class="icon"><i class="fab fa-facebook-f"></i></div>
+            <div class="icon"><i class="fab fa-instagram"></i></div>
+            <div class="icon"><i class="fab fa-twitter"></i></div>
+
+        </div>
+
+
+
+        <div class="video-container">
+            <video src="/Image/video.m4" autoplay muted loop></video>
+        </div>
+        <div class="hamberger-menu" id="open"><i class="fas fa-bars"></i></div>
+        <div class="showcase-content">
+            <div class="showcase-text">
+                <h1>MÜHLVIERTEL</h1>
+            </div>
+            <div class="showcase-text">
+                <p>Willkommen zu Mühlviertel Landing Map </p>
+            </div>
+            <div class="showcase-arrow">
+                <i id="arrow-down">
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                </i>
+            </div>
+
+        </div>
+    </header>
+    <!--  -----------------------------------------BODY - MAIN SECTION --------------------------------------------- -->
+    <section class="middle-section">
+        <div class="middle-text">
+            <h1>Suche nache deine lieblings Schule</h1>
+        </div>
+
+        <div class="main-box">
+
+
+            <div class="main-search-content">
+                <form method="POST" id="form" action="#">
+                    <div class="input-search">
+
+                        <div class="main-select">
+                            <div class="label-part">
+                                <label>Interessen</label>
+                            </div>
+                            <div class="select-part">
+                                <select>
+                                    <option>Informatik</option>
+                                    <option>Rechnungswessen</option>
+                                    <option>Koche</option>
+                                    <option>Fremdsprache</option>
+                                    <option>Sport</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="main-select">
+                            <div class="label-part">
+                                <label>Dauer</label>
+                            </div>
+                            <div class="select-part">
+                                <select>
+                                    <option>5 Jahr</option>
+                                    <option>3,5 Jahr</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="main-select">
+                            <div class="label-part">
+                                <label>Entfernung</label>
+                            </div>
+                            <div class="select-part">
+                                <select>
+                                    <option>1 bis 2 Km</option>
+                                    <option>3 bis 5 Km</option>
+                                    <option>6 bis 8 Km</option>
+                                    <option>10 bis 15 Km</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="main-select">
+                            <div class="label-part">
+                                <label>Schule Type</label>
+                            </div>
+                            <div class="select-part">
+                                <select>
+                                    <option>HTL</option>
+                                    <option>HLW</option>
+                                    <option>POLY</option>
+                                    <option>HAK</option>
+                                    <option>BORG</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="radio-part">
+                        <div class="internat-radio">
+                            <div><label>Internat</label></div>
+                            <div class="matura">
+                                <div>Ja</div>
+                                <div><input type="radio" name="internat" id="ja" value="ja"></div>
+                                <div>Nein</div>
+                                <div><input type="radio" name="internat" id="nein" value="nein"></div>
+
+                            </div>
+                        </div>
+                        <div class="matura-radio">
+                            <div><label>Matura</label></div>
+                            <div class="matura">
+                                <div>Ja</div>
+                                <div><input type="radio" name="matura" id="ja" value="ja"></div>
+                                <div>Nein</div>
+                                <div><input type="radio" name="matura" id="nein" value="nein"></div>
+
+                            </div>
+                        </div>
+
+                        <div class="regler">
+                            <div><label>Alter</label></div>
+                            <div class="alter-radio"><input id="masse" type="number" min="30" max="225" step="0.5"
+                                    value="75"></div>
+                        </div>
+                        <div class="select-button">
+                            <button>senden</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="image">
+                    <i class="fas fa-school"></i>
+                    <h1>LOGO</h1>
+                </div>
+            </div>
+            <div class="search">
+                <div class="search-input">
+                    <form action="#" method="POST" id="search">
+                        <div class="search-main">
+
+                            <input type="text" name="search" id="search" placeholder="suche">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="btn">SUCHE</div>
+                <div class="btn-close">schließen </div>
+            </div>
+    </section>
+    <section class="main-content">
+        <div class="zoom">
+            <div class="zoom-in"><i class="fas fa-plus"></i></div>
+            <div class="zoom-out"><i class="fas fa-minus"></i></div>
+        </div>
+
+
+        <div class="left-side">
+            <div class="close-left-side"><i class="fas fa-arrow-circle-left"></i></div>
+            <div class="open-left-side"><i class="fas fa-arrow-circle-right"></i></div>
+
+
+            <div class="text-content">
+                <div>
+                    <h1>INFORMATION</h1>
+                </div>
+                <br>
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div>
+                    <h2>HTL PERG</h2>
+                </div>
+
+                <div class="info-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        . Debitis ducimus ea excepturi at dolores accusantium dignis
+                        simos, repellendus laboriosam dolorum necessitatibus, nisi
+                        blanditiis nesciunt sunt est sequi iusto deleniti praesenti
+                        um id.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        . Debitis ducimus ea excepturi at dolores accusantium dignis
+                        simos, repellendus laboriosam dolorum necessitatibus, nisi
+                        blanditiis nesciunt sunt est sequi iusto deleniti praesenti
+
+                    </p>
+                </div>
+                <br>
+                <div class="map-img">
+                    <img src="/Image/htl.jpg">
+                </div>
+                <div class="school-icons">
+                    <a href="#">
+                        <div><i class="fas fa-envelope"></i></div>
+                    </a>
+                    <a href="#">
+                        <div><i class="fas fa-map-marked-alt"></i></div>
+                    </a>
+                    <a href="#">
+                        <div><i class="fab fa-facebook-f"></i></div>
+                    </a>
+                    <a href="#">
+                        <div><i class="fab fa-instagram"></i></div>
+                    </a>
+
+                </div>
+             
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--  -----------------------------------------FOOTER --------------------------------------------- -->
+
+    <footer>
+
+
+        <div class="main-footer">
+            <div class="first">
+                <h3>Schule</h3>
+                <ul>
+                    <a href="#">
+                        <li>HTL</li>
+                    </a>
+                    <a href="#">
+                        <li>HLW</li>
+                    </a>
+                    <a href="#">
+                        <li>POLY</li>
+                    </a>
+                    <a href="#">
+                        <li>BORG</li>
+                    </a>
+                    <a href="#">
+                        <li>HAK</li>
+                    </a>
+                    <a href="#">
+                        <li>VS</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="second">
+                <h3>Ausbildung</h3>
+                <ul>
+                    <a href="#">
+                        <li>IT</li>
+                    </a>
+                    <a href="#">
+                        <li>KOCH</li>
+                    </a>
+                    <a href="#">
+                        <li>MECHANIK</li>
+                    </a>
+                    <a href="#">
+                        <li>DESIGN</li>
+                    </a>
+                    <a href="#">
+                        <li>OFFICE</li>
+                    </a>
+                    <a href="#">
+                        <li>ARZT</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="third">
+                <h3>Standort</h3>
+                <ul>
+                    <a href="#">
+                        <li>PERG</li>
+                    </a>
+                    <a href="#">
+                        <li>LINZ</li>
+                    </a>
+                    <a href="#">
+                        <li>GEREIN</li>
+                    </a>
+                    <a href="#">
+                        <li>MATHOUSEN</li>
+                    </a>
+                    <a href="#">
+                        <li>INNS</li>
+                    </a>
+                    <a href="#">
+                        <li>LNGENSTEIN</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="fourth">
+                <h3>WICHTIG</h3>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Maiores deleniti v
+                    oluptatum architecto repellendus quod!
+                    Quisquam consequuntur ut aspernatur m
+                    inus error, eos sunt necessitatibus
+                    ducimus sapiente, ipsum natus hic,
+                    unde reprehenderit?
+                </p>
+
+            </div>
+        </div>
+        <div class="main-footer-small">
+            <div>
+                <a href="#">
+                    <p>IMPRESSUM</p>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <p><i class="far fa-copyright"></i> In 2020 design Qasem Hashemi with <i class="far fa-heart"></i>
+                    </p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="top">
+        <a href="#"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+
+
+
+    <script src="/js/js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
 </body>
+
 </html>
+
+
+<!-- box 1 --------------------------------------------------- -->
+<!-- <div class="box">
+                        <div class="school-box">
+                            <div class="box-img">HTL</div>
+                            <div class="box-content"> 
+                                <br>
+                                <a href="#">Weierlesen</a>
+                                </div>
+                            
+                        </div>
+                        <div class="school-box">
+                            <div class="box-img">BORG</div>
+                            <div class="box-content"> 
+                                <br>
+                                <a href="#">Weierlesen</a>
+                                </div>
+                        
+
+                        </div>
+                        <div class="school-box">
+                            <div class="box-img">NMS</div>
+                            <div class="box-content"> 
+                                <br>
+                                <a href="#">Weierlesen</a>
+                                </div>
+                            
+                        </div> 
+
+                </div>
+            box 2 -
+                <div class="box1">
+                    <div class="school-box">
+                        <div class="box-img">HTL</div>
+                        <div class="box-content"> 
+                            <br>
+                            <a href="#">Weierlesen</a>
+                            </div>
+                        
+                    </div>
+                    <div class="school-box">
+                        <div class="box-img">BORG</div>
+                        <div class="box-content"> 
+                            <br>
+                            <a href="#">Weierlesen</a>
+                            </div>
+                    
+
+                    </div>
+                    <div class="school-box">
+                        <div class="box-img">NMS</div>
+                        <div class="box-content"> 
+                            <br>
+                            <a href="#">Weierlesen</a>
+                            </div>
+                        
+                    </div> 
+
+            </div> -->
